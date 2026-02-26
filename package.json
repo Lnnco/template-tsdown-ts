@@ -1,25 +1,36 @@
 {
-  "name": "template-base",
+  "name": "@lnnco/template-base",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Lnnco",
   "packageManager": "pnpm@10.11.0",
+  "scripts": {
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint --color .",
+    "lint:fix": "eslint --fix --color .",
+    "prettier": "prettier . --write",
+    "commit": "better-commits",
+    "prepare": "husky"
+  },
   "devDependencies": {
     "@commitlint/cli": "^20.4.2",
     "@commitlint/config-conventional": "^20.4.2",
     "@commitlint/types": "^20.4.0",
-    "better-commits": "^1.19.1",
+    "@eslint/js": "^10.0.1",
+    "@vitest/ui": "^4.0.18",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.56.1",
     "eslint": "^10.0.2",
-    "husky": "^9.1.7",
-    "lint-staged": "^16.2.7",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
     "prettier": "3.8.1",
+    "lint-staged": "^16.2.7",
+    "better-commits": "^1.19.1",
+    "globals": "^17.3.0",
+    "husky": "^9.1.7",
     "semantic-release": "^25.0.3",
-    "typescript": "^5.9.3"
+    "vitest": "^4.0.18"
   }
 }

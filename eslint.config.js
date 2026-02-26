@@ -1,11 +1,11 @@
 import js from '@eslint/js'
 import globals from 'globals'
 import tseslint from 'typescript-eslint'
-import { globalIgnores } from 'eslint/config'
 import prettierConfig from 'eslint-config-prettier'
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
+import { defineConfig, globalIgnores } from 'eslint/config'
 
-export default tseslint.config(
+export default defineConfig(
   [
     globalIgnores(['dist']),
     {
